@@ -1,4 +1,4 @@
 import socket
 
 def main():
-    pass
+    data = getData()
