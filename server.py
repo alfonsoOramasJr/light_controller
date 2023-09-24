@@ -15,6 +15,10 @@ def sendCommand(client, GPIOpin):
     client.send(str(GPIOpin).encode())
     print("COMMAND OK")
 
+def getData(client):
+    data = client.recv(1024).decode()
+    return data
+
 def main():
     LEDarray = [17,27,22,25]
     server = createServer()
