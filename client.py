@@ -1,4 +1,5 @@
 import socket
+import time
 
 def createClient():
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -7,6 +8,11 @@ def createClient():
 
 def getData(client):
     data = client.recv(1024).decode()
+
+def execute(data):
+    turnOffLED(data)
+    time.sleep(1)
+    turnOnLED(data)
 
 def main():
     client = createClient()
