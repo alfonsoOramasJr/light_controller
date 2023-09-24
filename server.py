@@ -28,7 +28,7 @@ def main():
     print("CLIENT OK")
 
     while True:
-        data = getData()
+        data = getData(client)
         if data != '':
             computerChoice = getRandomChoice()
             sendCommand(client, LEDarray[computerChoice])
