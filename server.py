@@ -1,6 +1,10 @@
 import socket
 import random
 
+def createServer():
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    
+
 def getRandomChoice():
     return random.randint(0, 3)
 
