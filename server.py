@@ -13,6 +13,8 @@ def main():
     LEDarray = [17,27,22,25]
     server = createServer()
     server.listen(1)
+    client, address = server.accept()
+
     while True:
         computerChoice = getRandomChoice()
         sendCommand(client, LEDarray[computerChoice])
