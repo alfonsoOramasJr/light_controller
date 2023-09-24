@@ -1,4 +1,5 @@
 import socket
+import random
 
 def main():
-    pass
+    computerChoice = getRandomChoice()
