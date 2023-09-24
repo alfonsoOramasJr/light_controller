@@ -1,11 +1,11 @@
 import socket
 
-def getData():
+def getData(client):
     pass
 
 def main():
     client = createClient()
-    
+
     while True:
         data = getData()
         execute(data)
