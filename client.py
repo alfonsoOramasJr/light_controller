@@ -2,6 +2,7 @@ import socket
 
 def createClient():
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    return client
 
 def getData(client):
     pass
