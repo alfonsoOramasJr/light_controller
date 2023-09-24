@@ -32,5 +32,6 @@ def main():
         if data != '':
             computerChoice = getRandomChoice()
             sendCommand(client, LEDarray[computerChoice])
+            data = ''
 
 main()
