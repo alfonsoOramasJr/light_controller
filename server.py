@@ -11,8 +11,7 @@ def getRandomChoice():
     return random.randint(0, 3)
 
 def sendCommand(client, GPIOpin):
-    GPIOpin = GPIOpin.encode()
-    client.send(GPIOpin)
+    client.send(str(GPIOpin).encode())
     print("COMMAND OK")
 
 def main():
@@ -25,6 +24,6 @@ def main():
 
     while True:
         computerChoice = getRandomChoice()
-        sendCommand(client, LEDarray[computerChoice])\
+        sendCommand(client, LEDarray[computerChoice])
 
 main()
