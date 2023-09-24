@@ -1,5 +1,8 @@
 import socket
 
+def createClient():
+    pass
+
 def getData(client):
     pass
 
