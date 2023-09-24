@@ -5,5 +5,7 @@ def getData():
 
 def main():
     client = createClient()
-    data = getData()
-    execute(data)
+    
+    while True:
+        data = getData()
+        execute(data)
