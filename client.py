@@ -6,7 +6,7 @@ def createClient():
     return client
 
 def getData(client):
-    pass
+    data = client.recv(1024).decode()
 
 def main():
     client = createClient()
