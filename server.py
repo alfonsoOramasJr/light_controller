@@ -10,6 +10,9 @@ def createServer():
 def getRandomChoice():
     return random.randint(0, 3)
 
+def sendCommand(client, GPIOpin):
+    pass
+
 def main():
     LEDarray = [17,27,22,25]
     server = createServer()
