@@ -1,5 +1,6 @@
 import socket
 import random
+import time
 
 def createServer():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -23,7 +24,9 @@ def main():
     print("CLIENT OK")
 
     while True:
-        computerChoice = getRandomChoice()
-        sendCommand(client, LEDarray[computerChoice])
+        data = getData()
+        if data != '':
+            computerChoice = getRandomChoice()
+            sendCommand(client, LEDarray[computerChoice])
 
 main()
