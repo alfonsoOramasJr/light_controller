@@ -11,7 +11,8 @@ def getRandomChoice():
     return random.randint(0, 3)
 
 def sendCommand(client, GPIOpin):
-    client.send(GPIOpin.encode())
+    GPIOpin = GPIOpin.encode()
+    client.send(GPIOpin)
     print("COMMAND OK")
 
 def main():
