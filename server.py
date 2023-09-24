@@ -12,6 +12,7 @@ def getRandomChoice():
 
 def sendCommand(client, GPIOpin):
     client.send(GPIOpin.encode())
+    print("COMMAND OK")
 
 def main():
     LEDarray = [17,27,22,25]
