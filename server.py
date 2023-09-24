@@ -24,4 +24,6 @@ def main():
 
     while True:
         computerChoice = getRandomChoice()
-        sendCommand(client, LEDarray[computerChoice])
+        sendCommand(client, LEDarray[computerChoice])\
+
+main()
