@@ -9,6 +9,12 @@ def createClient():
 def getData(client):
     data = client.recv(1024).decode()
 
+def turnOffLED(data):
+    pass
+
+def turnOnLED(data):
+    pass
+
 def execute(data):
     turnOffLED(data)
     time.sleep(1)
