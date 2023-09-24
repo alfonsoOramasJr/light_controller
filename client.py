@@ -7,5 +7,5 @@ def main():
     client = createClient()
 
     while True:
-        data = getData()
+        data = getData(client)
         execute(data)
