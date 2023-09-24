@@ -1,2 +1,4 @@
 import socket
-print('test')
+
+def main():
+    pass
