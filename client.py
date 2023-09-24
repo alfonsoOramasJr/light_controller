@@ -9,6 +9,7 @@ def getData(client):
 
 def main():
     client = createClient()
+    client.connect(('10.0.0.138', 3000))
 
     while True:
         data = getData(client)
